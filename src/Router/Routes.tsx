@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import Main from '../Main';
 import SortView from '../Component/Sort/SortView';
 import HSort from '../Component/Sort/HeapSort';
@@ -9,15 +9,15 @@ function Routes(): JSX.Element {
   return (
     <Router>
       <Switch>
-        <Route exact path="/algorithm-deploy/" component={Main} />
-        <Route path="/algorithm-deploy/BSort" component={SortView} />
-        <Route path="/algorithm-deploy/ISort" component={SortView} />
-        <Route path="/algorithm-deploy/SSort" component={SortView} />
-        <Route path="/algorithm-deploy/MSort" component={SortView} />
-        <Route path="/algorithm-deploy/QSort" component={SortView} />
-        <Route path="/algorithm-deploy/HSort" component={HSort} />
-        <Route path="/algorithm-deploy/bfs" component={GraphView} />
-        <Route path="/algorithm-deploy/dfs" component={GraphView} />
+        <Route exact path="/" component={Main} />
+        <Route path="/BSort" component={SortView} />
+        <Route path="/ISort" component={SortView} />
+        <Route path="/SSort" component={SortView} />
+        <Route path="/MSort" component={SortView} />
+        <Route path="/QSort" component={SortView} />
+        <Route path="/HSort" component={HSort} />
+        <Route path="/bfs" component={GraphView} />
+        <Route path="/dfs" component={GraphView} />
       </Switch>
     </Router>
   );
