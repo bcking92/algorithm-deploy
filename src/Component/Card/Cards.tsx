@@ -65,6 +65,14 @@ const items = [
   },
   {
     index: 5,
+    name: '힙정렬',
+    path: '/HSort',
+    img: '',
+    desc: '항상 최대값 또는 최소값을 첫 노드에 가지고있는 최대힙, 최소힙의 성질을 이용한 정렬입니다.'
+    + '배열로 힙을 만들고 힙의 첫번째 원소를 뽑아내는 방식으로 작동합니다.',
+  },
+  {
+    index: 6,
     name: '너비 우선 탐색(BFS, Breath First Search)',
     path: '/bfs',
     img: '',
@@ -72,7 +80,7 @@ const items = [
     + '그랲',
   },
   {
-    index: 6,
+    index: 7,
     name: '깊이 우선 탐색(DFS, Depth First Search)',
     path: '/dfs',
     img: '',
